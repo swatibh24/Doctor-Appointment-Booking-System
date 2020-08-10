@@ -1,0 +1,23 @@
+.about-page {
+  max-width: 60rem;
+  min-width: 20em;
+  margin: auto;
+}
+
+.about-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.about-detail {
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+.about-img {
+  width: 100%;
+  height: 380px;
+}
+

@@ -1,0 +1,20 @@
+input[type=text],[type=date]{
+  color: #69d5b1;
+  border: none;
+  width: 95%;
+  padding: 1% 4%;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 1px 1px -1px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}
+
+input[type=text]:focus,input[type=date]:focus, button:focus {
+  outline: none;
+}
+
+input[type=text] {
+    font-size: 20px;
+    padding: 1.5% 2%;
+}
+

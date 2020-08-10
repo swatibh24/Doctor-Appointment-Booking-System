@@ -1,0 +1,68 @@
+.doctors-details {
+    border: none;
+    padding: 2% 2%;
+    margin: 20px 10%;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px -1px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    background-color: #ffffff;
+}
+ .heading {
+    font-size: 40px;
+    color: #69d5b1;
+}
+.subheading {
+    color: gray;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.img-div{
+    margin-right: 300px;
+}
+.doc-img {
+    width: 40vh;
+    border-style: none;
+    vertical-align: middle;
+    border-radius: calc(.25rem - 1px);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.doctor-title {
+    margin-bottom: .75rem;
+}
+.h5, h5 {
+    font-size: 1.25rem;
+}
+.detail-text{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.details {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom: 1rem!important;
+}
+.detail-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    margin-top: -50px;
+}
+
+
+

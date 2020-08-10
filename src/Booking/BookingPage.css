@@ -1,0 +1,73 @@
+.patient-booking-form {
+    border: none;
+    padding: 2% 2%;
+    margin: 20px 10%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px -1px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}
+ .button-book-apt {
+    text-align: center;
+    padding: 20px;
+}
+.patient-name{
+  marginTop: 10px;
+  marginBottom:5px;
+  marginLeft: 5px ;
+  margin-bottom: 10px;
+}
+
+.date{
+ marginTop:10px;
+ marginLeft:5px;
+ margin-bottom: 10px;
+}
+.button-book-apt{
+    display: flex;
+    padding: 20px;
+}
+.book-apt{
+    margin-right: 10px;
+}
+
+.label-date{
+    marginTop:10px;
+    marginLeft:5px;
+    margin-bottom: 10px;
+}
+
+.input-text-field {
+    box-shadow: none;
+    border: 1px solid #e3e3e3;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.date-text-field{
+    border: 1px solid #e3e3e3;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 95%;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 1px 1px -1px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}
+
+.heading {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.app-heading{
+    color: black;
+    fontSize:20px;
+    margin-bottom: 20px;
+}
+
+
+
+

@@ -1,0 +1,44 @@
+.contact-page{
+  max-width: 30em;
+  min-width: 20em;
+  margin: auto;
+}
+.contact-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+.contact-form {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  font-family: Verdana, Helvetica, sans-serif;
+}
+input[type=contact] {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.submit {
+  text-align: center;
+}
+
+.submit-button {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px 25px;
+  font-size: 15px;
+  font-family: Futura, Arial, sans-serif;
+}

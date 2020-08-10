@@ -1,0 +1,276 @@
+const hospitalsData = [
+    {
+        id: 1,
+        hospitalName: 'Wockhardt Hospital',
+        address: 'Sector-12, Kharghar-410210',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '9766913733',
+        locationLink: 'https://www.google.com/maps/search/wockhardt+hospital+/@19.0464131,73.0496794,13z/data=!3m1!4b1',
+    },
+    {
+        id: 2,
+        hospitalName: 'Global Hospital',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '9371163973',
+        locationLink: 'https://www.google.com/maps/search/Global+Hospital/@19.0464065,73.0496793,13z/data=!3m1!4b1',
+    },
+    {
+        id: 3,
+        hospitalName: 'P. D. Hinduja National Hospital & Medical Research Centre',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '7038211983',
+        locationLink: 'https://www.google.com/maps/place/P.+D.+Hinduja+National+Hospital+%26+Medical+Research+Centre/@19.0335001,72.8361603,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7cecd88740bcb:0xe378fe89e47ab606!8m2!3d19.0335001!4d72.838349',
+    },
+    {
+        id: 4,
+        hospitalName: 'Kohinoor',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '8286000613',
+        locationLink: 'https://www.google.com/maps/place/Kohinoor+Hospital/@19.0760717,72.8841002,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c88f4dc6333b:0x9b988603d0ef51fe!8m2!3d19.0760717!4d72.8862889',
+    },
+    {
+        id: 5,
+        hospitalName: 'Apollo',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '9286808613',
+        locationLink: 'https://www.google.com/maps/search/Apollo+Hospital/@19.0760715,72.8775341,15z/data=!3m1!4b1',
+    },
+    {
+        id: 6,
+        hospitalName: 'Mumbai Tata Hospital',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '7286858614',
+        locationLink: 'https://www.google.com/maps/search/tata+Hospital/@19.0404395,72.8250684,13z/data=!3m1!4b1',
+    },
+    {
+        id: 7,
+        hospitalName: 'Tata Memorial Hospital',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '9421393333',
+        locationLink: 'https://www.google.com/maps/place/Tata+Memorial+Hospital+Annexe+Building/@19.0404395,72.8250684,13z/data=!4m8!1m2!2m1!1stata+Hospital!3m4!1s0x3be7cee44a508611:0x65ac2d2f7bdf1784!8m2!3d19.0054868!4d72.8429039',
+    },
+    {
+        id: 8,
+        hospitalName: 'Jaslok Hospital and Research Centre',
+        address: 'Mumbai',
+        departments: ['Dentistry','Ortho', 'OPD', 'Gynac','General'],
+        timings: 'Open 24 Hours',
+        contactNumber: '9021652225',
+        locationLink: 'https://www.google.com/maps/place/Jaslok+Hospital+and+Research+Centre/@18.9716718,72.8075746,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce76d1f47593:0x73af47ca4e2965c7!8m2!3d18.9716718!4d72.8097633',
+    },
+];
+
+const doctorsData = [
+    {
+        id: 1,
+        name: 'Dr. Neha Ahuja Mahajan',
+        degrees: 'BDS, MDS - Orthodontics and Dentofacial Orthopaedics',
+        department: 'Dentist(Smile Design)' +
+            '',
+        experience: '7 years',
+        description: 'Dr. Neha is a Dentist  and has an experience of 7 years in this field. ' +
+                     'She is a member of Indian Dental Association and American Dental Association. Some of the services provided by the doctor are: ' +
+                     'Smile Design,TMJ Therapy,Dental Sleep Medicine (Snoring and Sleep Apnea Management),Dental Services and Wedding Smile Planner etc.',
+        daysAvailable: 'Mon - Fri',
+        timings: '8:30PM to 9:30PM',
+        hospitalId:1,
+        hospitalName: 'Wockhardt Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/325eec7f-0348-494d-9496-7628ffdb4b32.jpg?i_type=t_100x100',
+    },
+    {
+        id: 2,
+        name: 'Dr. Fesca Adwani Dawani',
+        degrees: 'MBBS, MD',
+        department: 'General Physician',
+        experience: '5 years',
+        description:'Diabetes specialist,with special interest in infectious disease , thyroid,skin , respiratory disease, allergy, asthma',
+        daysAvailable: 'Mon - Fri',
+        timings: '8:30AM to 9:30AM',
+        hospitalId:1,
+        hospitalName: 'Wockhardt Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/befc7cf6-754b-434d-801e-7c09f641d752.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 3,
+        name: 'Dr. Anshul Mahajan',
+        degrees: 'MDS - Prosthodontist And Crown Bridge, BDS Prosthodontist, Implantologist, Dentist',
+        experience: '7 years',
+        department: 'Oral Surgeon',
+        description: 'Dr. Anshul is a Oral Surgeon  and has an experience of 7 years in this field. ' +
+            'He is a member of Indian Dental Association and American Dental Association. Some of the services provided by the doctor are: ' +
+            'Oral Surgury,Dental Services and Wedding Smile Planner etc.',
+        daysAvailable: 'Mon - Fri',
+        timings: '6:30PM to 8:30PM',
+        hospitalId:2,
+        hospitalName: 'Global Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/6178b4fc-87e4-4c70-866c-3c2be2d6c528.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 4,
+        name: 'Dr. Ankur Gupta',
+        degrees: 'MBBS, MD',
+        department: 'General Physician',
+        experience: '5 years',
+        description:'Diabetes specialist,with special interest in infectious disease , thyroid,skin , respiratory disease, allergy, asthma',
+        daysAvailable: 'Mon - Fri',
+        timings: '9:30AM to 11:30AM',
+        hospitalId:2,
+        hospitalName: 'Global Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/0c64f5d5-9764-4539-a5e4-eeb366df7d5c.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 5,
+        name: 'Dr. Jyostana Ahuja Gupta',
+        degrees: 'MBBS, DGO, MD - Obstetrics & Gynaecology, FCPS - General Surgery',
+        experience: '26 years',
+        department: 'Gynecologist, Obstetrician',
+        description:'Dr. Jyostana is a Gynecologist and Obstetrician in Dadar East, Mumbai and has an experience of 26 years in these fields. \n' +
+            'Dr. Jyostana practices at Parchure Nursing Home in Dadar East, Mumbai. She completed MBBS from Grant Medical College and Sir JJ Hospital, \n' +
+            'She is a member of Federation of Obstetric and Gynaecological Societies of India (FOGSI) and Indian Association \n' +
+            'of Gynaecological Endoscopist (IAGE). Some of the services provided by the doctor are: Painless Labour,Family Planning,Cancer Screening Gynaecological & Laproscopic Surgery,Menopause Care and Gynaecology Care & Counselling Infertility etc',
+        daysAvailable: 'Mon - Fri',
+        timings: '10:30PM to 12:30AM',
+        hospitalId:3,
+        hospitalName: 'P. D. Hinduja National Hospital & Medical Research Centre',
+        imgUrl:'https://imagesx.practo.com/providers/a2995347-0c2d-4538-9a07-7ebeaa8b324d.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 6,
+        name: 'Dr. Manjeet Dawani',
+        degrees: 'MBBS, MS - ENT',
+        experience: '9 years',
+        department: 'ENT/ Otorhinolaryngologist',
+        description:'Dr. Manjeet is a ENT/ Otorhinolaryngologist in Bandra West, Mumbai and has an experience of 12 years in this field.Some of the services provided by the doctor are: Grommet Insertion,Hearing Aid Fitting,Thyroid Disorder Treatment ,Rhinoplasty and Microsurgery of the Larynx etc',
+        daysAvailable: 'Mon - Fri',
+        timings: '4:30PM to 8:30PM',
+        hospitalId:3,
+        hospitalName: 'P. D. Hinduja National Hospital & Medical Research Centre',
+        imgUrl:'https://imagesx.practo.com/providers/6716e6f8-d6d3-4c4a-81fd-8a67de7f761d.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 7,
+        name: 'Dr. Abhijeet Sawant',
+        degrees: 'MBBS, MD',
+        experience: '7 years',
+        department: 'General Physician',
+        description:'Diabetes specialist,with special interest in infectious disease , thyroid,skin , respiratory disease, allergy, asthma',
+        daysAvailable: 'Mon - Fri',
+        timings: '6:30PM to 8:30PM',
+        hospitalId:4,
+        hospitalName: 'Kohinoor',
+        imgUrl:'https://imagesx.practo.com/providers/dc716640-151b-4d79-a47d-bf93770db88a.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 8,
+        name: 'Dr. Mangla Ketkar',
+        degrees: 'MBBS, DGO, MD - Obstetrics & Gynaecology, FCPS - General Surgery',
+        experience: '15 years',
+        department: 'OPD',
+        description:'Dr. Mangla is a Gynecologist and Obstetrician in Dadar East, Mumbai and has an experience of 15 years in these fields. \n' +
+            'Dr. Mangla practices at Parchure Nursing Home in Dadar East, Mumbai. She completed MBBS from Grant Medical College and Sir JJ Hospital, \n' +
+            'She is a member of Federation of Obstetric and Gynaecological Societies of India (FOGSI) and Indian Association \n' +
+            'of Gynaecological Endoscopist (IAGE). Some of the services provided by the doctor are: Painless Labour,Family Planning,Cancer Screening Gynaecological',
+        daysAvailable: 'Mon - Fri',
+        timings: '7:30PM to 8:30PM',
+        hospitalId:4,
+        hospitalName: 'Kohinoor',
+        imgUrl:'https://www.practo.com/bangalore/doctor/vanita-vaishnav-gynecologist-obstetrician?specialization=gynecologist/obstetrician',
+
+    },
+    {
+        id: 9,
+        name: 'Dr. Sean Danis',
+        degrees: 'MBBS, MD',
+        experience: '7 years',
+        department: 'OPD',
+        description:'Diabetes specialist,with special interest in infectious disease , thyroid,skin , respiratory disease, allergy, asthma',
+        daysAvailable: 'Mon - Fri',
+        timings: '7:30PM to 8:30PM',
+        hospitalId:5,
+        hospitalName: 'Apollo',
+        imgUrl:'https://imagesx.practo.com/providers/82e27551-8fd4-4433-a4aa-943315281640.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 10,
+        name: 'Dr. Sunny Vaswani ',
+        degrees: 'MBBS, MD - Dermatology',
+        experience: '10 years',
+        department: 'MBBS, MD - Dermatology',
+        description:'Hair care and treatments of hair loss is his specialty.',
+        daysAvailable: 'Mon - Fri',
+        timings: '7:30PM to 8:30PM',
+        hospitalId:6,
+        hospitalName: 'Mumbai Tata Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/f5bc373a-a7d6-4dc8-85ea-5f89d1f27406.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 11,
+        name: 'Dr. Ankita Asher',
+        degrees: 'BAMS, MD - Ayurveda Medicine',
+        experience: '15 years',
+        department: 'Ayurveda',
+        description:'Dr. Ankita says "I am a practising Ayurvedic Physician with 16 years plus experience in managing chronic and critical illnesses. I ensure following an interdisciplinary approach towards patient care. The practise composes of using Generic Ayurvedic formulae and herbal preparations supported by external and internal Panchakarma and related procedures',
+        daysAvailable: 'Mon - Fri',
+        timings: '7:30PM to 8:30PM',
+        hospitalId:7,
+        hospitalName: 'Tata Memorial Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/48ae8fe7-8725-4fe7-9ff9-052631962fdb.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 12,
+        name: 'Dr. Jamshed J. Dalal',
+        degrees: 'MBBS, MD - Dermatology',
+        experience: '5 years',
+        department: 'OPD',
+        description:'Hair care and treatments of hair loss is his specialty.',
+        daysAvailable: 'Mon - Fri',
+        timings: '7:30PM to 8:30PM',
+        hospitalId:8,
+        hospitalName: 'Jaslok Hospital and Research Centre',
+        imgUrl:'https://imagesx.practo.com/providers/208ada05-641c-44b1-9dfb-45d2b320fcfd.jpg?i_type=t_100x100',
+
+    },
+    {
+        id: 13,
+        name: 'Dr. Vinay Gandhi',
+        degrees: 'MBBS, Eyes Specialist/Optometrists',
+        experience: '10 years',
+        department: 'OPD',
+        description:'Lasik Specialist.',
+        daysAvailable: 'Mon - Fri',
+        timings: '7:30PM to 8:30PM',
+        hospitalId:1,
+        hospitalName: 'Wockhardt Hospital',
+        imgUrl:'https://imagesx.practo.com/providers/208ada05-641c-44b1-9dfb-45d2b320fcfd.jpg?i_type=t_100x100',
+
+    },
+];
+
+const Data = {
+    hospitalsData,
+    doctorsData,
+};
+
+module.exports=Data;
